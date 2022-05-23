@@ -1,8 +1,8 @@
-const client = require("./pool");
-const { User, Genre, Movie } = require("./models");
+const client = require("./client");
+const { User, Genre, Movie } = require("./index")
 const { users, genre, movies } = require("./seedData");
-const { getGenreById, getAllGenres } = require("./models/genres");
-const { getAllMovies } = require("./models/movies");
+const { getGenreById, getAllGenres } = require("./genres");
+const { getAllMovies } = require("./movies");
 
 const dropTables = async () => {
   console.log("----Dropping tables----");

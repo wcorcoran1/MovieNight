@@ -1,5 +1,5 @@
 module.exports = {
-    User: require('./users'),
+    User: require('./users.js'),
     Genre: require('./genres'),
     Movie: require("./movies")
   }
